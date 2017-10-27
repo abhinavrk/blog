@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Starry Night</title>
+    <link>https://abhinavrk.github.io/post/</link>
+    <description>Recent content in Posts on Starry Night</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 26 Oct 2017 22:27:39 -0400</lastBuildDate>
+    
+	<atom:link href="https://abhinavrk.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Starry Night</title>
+      <link>https://abhinavrk.github.io/post/getting-started/</link>
+      <pubDate>Thu, 26 Oct 2017 22:27:39 -0400</pubDate>
+      
+      <guid>https://abhinavrk.github.io/post/getting-started/</guid>
+      <description>You&amp;rsquo;re in! Nice. We&amp;rsquo;ve put together a little post to introduce you to the Ghost editor and get you started. Go ahead and edit this post to get going and learn how it all works!
+Getting Started Writing in markdown is really easy. In the left hand panel of Ghost, you simply write as you normally would. Where appropriate, you can use formatting shortcuts to style your content. For example, a list:</description>
+    </item>
+    
+  </channel>
+</rss>
