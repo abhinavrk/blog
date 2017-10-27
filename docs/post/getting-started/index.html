@@ -158,6 +158,8 @@ article [itemprop="description"] {
   <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
     
     
+      <a itemprop="url" class="" href="/"><span itemprop="name">Home</span></a>
+    
       <a itemprop="url" class="active" href="/post/"><span itemprop="name">Posts</span></a>
     
   </nav>
@@ -202,6 +204,38 @@ article [itemprop="description"] {
       <blockquote itemprop="description">Sample post</blockquote>
     
     
+  <details>
+    <summary>Table of Contents</summary>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#links">Links</a></li>
+<li><a href="#what-about-images">What about Images?</a></li>
+<li><a href="#quoting">Quoting</a></li>
+<li><a href="#working-with-code">Working with Code</a></li>
+<li><a href="#ready-for-a-break">Ready for a Break?</a></li>
+<li><a href="#advanced-usage">Advanced Usage</a></li>
+</ul></li>
+</ul>
+</nav>
+  </details>
+  <script>
+    const el = document.querySelector('details summary')
+    el.onclick = () => {
+      (function(l,o,a,d,e,r){e=o.createElement(a),r=o.getElementsByTagName(a)[0];e.async=1;e.src=d;r.parentNode.insertBefore(e,r)})(window,document,'script','/js/smoothscroll.js');
+      el.onclick = null
+    }
+    document.querySelectorAll('#TableOfContents a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector(
+          link.href.slice(link.href.indexOf('#'))
+        ).scrollIntoView({ behavior: 'smooth' })
+      })
+    })
+  </script>
+
 
     <div itemprop="articleBody">
       
