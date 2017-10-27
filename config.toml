@@ -1,7 +1,7 @@
 baseUrl = "https://abhinavrk.github.io"
 languageCode = "en-US" # Controls site language
 title = "Starry Night" # Homepage title and page title suffix
-publishDir = "docs"
+publishDir = "public"
 sectionPagesMenu = "main"
 
 
