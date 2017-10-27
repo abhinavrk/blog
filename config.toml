@@ -2,6 +2,7 @@ baseUrl = "https://abhinavrk.github.io"
 languageCode = "en-US" # Controls site language
 title = "Starry Night" # Homepage title and page title suffix
 publishDir = "docs"
+sectionPagesMenu = "main"
 
 
 paginate = 11 # Number of posts to show before paginating
@@ -22,3 +23,14 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
     "https://source.unsplash.com/category/technology/2000x1322"
   ] # Suggested, controls default Open Graph images
   theme_variant = "" # Optional, for use to overriding default theme
+
+[[menu.main]]
+  name = "Home"
+  weight = 1
+  identifier = "home"
+  url = "/"
+[[menu.main]]
+  name = "Posts"
+  weight = 2
+  identifier = "post"
+  url = "/post/"
