@@ -1,0 +1,27 @@
+{{ define "title" -}}
+  {{ .Site.Title }}
+{{- end }}
+{{ define "header" }}
+  {{ partial "menu.html" . }}
+{{ end }}
+{{ define "main" }}
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
+  <p>
+    Welcome to 
+    {{ if ne .Site.Params.hide_author true }}
+      <span itemprop="author">{{ .Site.Params.author}}'s</span>
+    {{ end }}
+    blog. I'm currently a software developer at Amazon. Any views and opinions represented in this blog are personal
+    and should not be taken to be associated with Amazon or any other professional institution.
+  </p>
+  <hr>
+  {{ range (.Paginate (where .Data.Pages "Type" "post")).Pages }}
+    {{ partial "page-summary.html" . }}
+  {{ end }}
+{{ end }}
+{{ define "footer" }}
+  {{ partial "pagination.html" . }}
+  {{ partial "powered-by.html" . }}
+{{ end }}
