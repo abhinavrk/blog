@@ -9,6 +9,7 @@ tags = ["hugo", "test", "draft"]
 images = [
   "https://source.unsplash.com/category/technology/1600x900"
 ] # overrides the site-wide open graph image
+nomath = false
 +++
 
 You're in! Nice. We've put together a little post to introduce you to the Ghost
@@ -70,6 +71,17 @@ awesome-thing {
   width: 100%;
 }
 ```
+
+You can even embed LaTex via MathJax (both inline: `$ E = mc^2 $`), and in display mode:
+
+<div>
+$$
+E = m c^2
+$$
+</div>
+
+The MathJax script is loaded async, and if you don't want to load it for a post (e.g. when the post
+has no math content), then just set the page-param: `nomath = true`.
 
 ## Ready for a Break?
 

@@ -35,7 +35,7 @@
      content: "\2014";
   }
   :target {
-    color: #fff;
+    color: rgba(0, 0, 0);
   }
   /* hack.css overrides and enhancements */
   .hack li ul {
