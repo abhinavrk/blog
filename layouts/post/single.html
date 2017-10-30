@@ -10,6 +10,10 @@
   {{partial "mathjax/async-load.html" . }}
 {{ end }}
 
+{{ if .Params.d3enabled }}
+  {{ partial "d3/async-load.html" . }}
+{{ end }}
+
 <article itemscope itemtype="http://schema.org/BlogPosting">
   {{ template "_internal/schema.html" . }}
   <header>
