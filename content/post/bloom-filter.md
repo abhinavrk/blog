@@ -18,6 +18,12 @@ nomath=true
 </div> 
 
 <script>
+
+function mod(n, m) {
+	var rem = n % m;
+	return (rem < 0) ? (rem + m) : rem;
+}
+
 function primeHashString(prime) {
 	return function (str) {
 		var hash = 0, i, chr;
@@ -53,7 +59,7 @@ function BloomFilter(size, hashes) {
 BloomFilter.prototype.add = function (e) {
 	var self = this;
 	self.hashes.forEach(h => {
-		var putOne = h(e) % self.size;
+		var putOne = mod(h(e), self.size);
 		self.values[putOne] = 1;
 	});
 	this.dorefresh();
@@ -61,7 +67,7 @@ BloomFilter.prototype.add = function (e) {
 
 BloomFilter.prototype.contains = function (e) {
 	var self = this;
-	var idx = this.hashes.map(h => h(e) % this.size);
+	var idx = this.hashes.map(h => mod(h(e), self.size));
 	var any = idx.map((i) => self.values[i] === 1);
 
 
